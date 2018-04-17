@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,7 +25,7 @@ body {
 <body>
     <!-- Navbar -->
     <div class="w3-top">
-        <div class="w3-bar w3-blue w3-card">
+        <div class="w3-bar w3-indigo w3-card">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="#index" class="w3-bar-item w3-button w3-padding-large">Home</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Portfolio</a>
@@ -42,13 +43,18 @@ body {
         </div>
     </div>
     <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <div id="navDemo" class="w3-bar-block w3-indigo w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
         <a href="#index" class="w3-bar-item w3-button w3-padding-large">About me</a>
         <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
     </div>
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
+      <header class="w3-container w3-padding-32 w3-center w3-indigo" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> James - Mr. Push-Foward</h1>
+    <p>Web Developer Enthusiast</p>
+    <img src="images/push-forward.jpg" alt="arrow" class="w3-image" width="992" height="1108">
+  </header>
         <!-- Automatic Slideshow Images -->
         <!-- <div class="mySlides w3-display-container w3-center">
             <img src="/w3images/la.jpg" style="width:100%">
@@ -75,26 +81,28 @@ body {
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="index">
             <h2 class="w3-wide">About this guy</h2>
             <p class="w3-opacity"><i>I like to Create</i></p>
-            <p class="w3-justify">Im an middle aged guy who is trying to take hold of his future. I understand that technology is the future and the more you understand it the better off you will be. The fields I want to pursue are either cloud or cyber security. I feel I will do better in security because I take pride in security and safety in my own life. So why not take the opportunity to work in field with this mentality. The other reason why I would do well in this field because I feel it is competitive.</p>
+            <p class="w3-justify"> MVP award goes to James Lemons!! Hard work pays off. I have learned that I am performance driven. High school, college, sports, jobs, and in my personal life I strive to be the best. Passion is what gives me the ability to achieve award winning objectives. Since everything is becoming tech-based, it only makes sense that I direct my passion to it. I am fascinated by how programming and coding gives you the ability to create anything you can imagine. Using html, javascript, react and so much more has ignited a new passion for me to master. Im excited to be apart of the tech world opposite of the customer. Instead customers will be interacting with a part of me </p>
+
+            <!-- <p class="w3-justify"> Im an middle aged guy who is trying to take hold of his future. I understand that technology is the future and the more you understand it the better off you will be. The fields I want to pursue are either cloud or cyber security. I feel I will do better in security because I take pride in security and safety in my own life. So why not take the opportunity to work in field with this mentality. The other reason why I would do well in this field because I feel it is competitive.</p>
             <br>
-            <p> One of the consistent attributes about me is that I like to win. For as long as I can remember I have always figured out a way to be best. Whether its giving 110% effort, putting in extra hours of training and learning, finding more efficient ways to better the system, etc, I've always earned my way to be labeled a top performer.</p>
+            <p> One of the consistent attributes about me is that I like to win. For as long as I can remember I have always figured out a way to be best. Whether its giving 110% effort, putting in extra hours of training and learning, finding more efficient ways to better the system, etc, I've always earned my way to be labeled a top performer.</p> -->
             <div class="w3-row w3-padding-32">
                 <div class="w3-third">
                     <p>Me</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                    <img src="images/self-pick-3.jpg" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
                 </div>
                 <div class="w3-third">
                     <p>Me again</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                    <img src="images/image1.png" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
                 </div>
                 <div class="w3-third">
                     <p>Me again...?</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+                    <img src="images/self-pick-2.jpg" class="w3-round" alt="ME" style="width:60%">
                 </div>
             </div>
         </div>
         <!-- The Tour Section -->
-        <div class="w3-blue" id="portfolio">
+        <div class="w3-indigo" id="portfolio">
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                 <h2 class="w3-wide w3-center">Portfolio</h2>
                 <p class="w3-opacity w3-center"><i>My Journey to Imaginative freedom</i></p>
@@ -113,13 +121,6 @@ body {
                         </div>
                     </div>
                     <div class="w3-third w3-margin-bottom">
-                        <img src="images/picture8.png" alt="Train-Schedule" style="width:100%" class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>College Bound</b></p>
-                            <a href="https://college-bound.herokuapp.com/"></a>
-                        </div>
-                    </div>
-                    <div class="w3-third w3-margin-bottom">
                         <img src="images/picture11.png" alt="News-app" style="width:100%" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
                             <p><b>Get the News</b></p>
@@ -127,17 +128,17 @@ body {
                         </div>
                     </div>
                     <div class="w3-third w3-margin-bottom">
+                        <img src="images/picture8.png" alt="Train-Schedule" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>College Bound</b></p>
+                            <a href="https://college-bound.herokuapp.com/"></a>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
                         <img src="images/picture7.png" alt="crystal game" style="width:100%" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
                             <p><b>Taste a Burger</b></p>
                             <a href="https://pushforward31.herokuapp.com/"></a>
-                        </div>
-                    </div>
-                    <div class="w3-third w3-margin-bottom">
-                        <img src="images/picture6.png" alt="Giftastic" style="width:100%" class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>Tinder Touches</b></p>
-                            <a href="https://whispering-mountain-10522.herokuapp.com/"></a>
                         </div>
                     </div>
                     <div class="w3-third w3-margin-bottom">
@@ -168,6 +169,13 @@ body {
                             <a href="https://pushforward31.github.io/week-4-homework/"></a>
                         </div>
                     </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="images/picture6.png" alt="Giftastic" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Tinder Touches</b></p>
+                            <a href="https://whispering-mountain-10522.herokuapp.com/"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,7 +197,7 @@ body {
                     <input class="w3-input w3-border" type="text" placeholder="Enter email">
                     <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
                     <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                    <p class="w3-right">Need <a href="#" class="w3-text-indigo">help?</a></p>
                 </div>
             </div>
         </div> -->
@@ -198,15 +206,15 @@ body {
             <h2 class="w3-wide w3-center">CONTACT</h2>
             <p class="w3-opacity w3-center"><i>Drop me a message</i></p>
             <div class="w3-row w3-padding-32">
-                <!-- <div class="w3-col m6 w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US
+                <div class="w3-col m12 w3-large w3-center w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Georgia, US
                     <br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: EdwardJJthe2@gmail.com
                     <br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: Will release after received email
                     <br>
-                </div> -->
-                <div class="w3-col m12">
+                </div>
+                <!-- <div class="w3-col m12">
                     <form action="/action_page.php" target="_blank">
                         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                             <div class="w3-half">
@@ -219,12 +227,12 @@ body {
                         <input class="w3-input w3-border" type="text" rows="5" placeholder="Message" required name="Message">
                         <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- End Page Content -->
     </div>
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-indigo w3-xlarge">
         <p class="w3-opacity w3-center"><i>More info about me</i></p>
         <i class="fa fa-github-square w3-hover-opacity icon" ><a href="https://github.com/pushforward31"></a></i>
         <i class="fa fa-stack-overflow w3-hover-opacity icon"><a href="https://stackoverflow.com/users/8960892/underdog-33"></a></i>
