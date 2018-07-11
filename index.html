@@ -44,15 +44,52 @@ h6 {
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 
 #main {
-    /*margin-left: 90px;
-    margin-right: -30px;*/
-    margin-left: 120px
+    margin-left: 90px;
+    margin-right: -30px;
+    
 }
+
+#lightning{
+    -webkit-animation-name: examplelight; 
+    -webkit-animation-duration: 4s; 
+    animation-name: examplelight;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes examplelight {
+    0%   {opacity: 0;}
+    10%  {opacity: 1;}
+    20%  {opacity: 0;}
+    30%  {opacity: 1;}
+    40%  {opacity: 0;}
+    50%  {opacity: 1;}
+    60%  {opacity: 0;}
+    70%  {opacity: 1;}
+    80%  {opacity: 0;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes examplelight {
+    0%   {opacity: 0;}
+    10%  {opacity: 1;}
+    20%  {opacity: 0;}
+    30%  {opacity: 1;}
+    40%  {opacity: 0;}
+    50%  {opacity: 1;}
+    60%  {opacity: 0;}
+    70%  {opacity: 1;}
+    80%  {opacity: 0;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 
 #crack{
     -webkit-animation-name: example; 
     -webkit-animation-duration: 4s; 
     animation-name: example;
+    animation-delay: 4s;
     animation-duration: 4s;
 }
 
@@ -124,6 +161,7 @@ h6 {
             <p>Web Developer Enthusiast</p>
             <img id = "crack" src="images/push-forward3.jpg" alt="arrow" class="w3-image" width="900" height="1108">
         </header>
+        <!-- <img id = "lightning" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbRciU0gy4RQwFuKwGQ_XpjwRhLxZXM5AdZVJR9ScADAkQG_Zf" width="75" height="75"> -->
         <!-- The Band Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="index">
             <h2 class="w3-wide">About this guy</h2>
