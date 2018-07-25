@@ -24,6 +24,44 @@ h6 {
     font-family: "Montserrat", sans-serif
 }
 
+h1, p, h2{
+    mix-blend-mode: difference;
+}
+
+body{
+    background: linear-gradient(-90deg, gold, black);
+    background-size: 900% 900%;
+    -webkit-animation: Gradient 15s ease infinite;
+    /*-moz-animation: Gradient 15s ease infinite;*/
+    animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 .w3-row-padding img {
     margin-bottom: 12px
 }
@@ -49,63 +87,7 @@ h6 {
     
 }
 
-#lightning{
-    -webkit-animation-name: examplelight; 
-    -webkit-animation-duration: 4s; 
-    animation-name: examplelight;
-    animation-duration: 4s;
-}
 
-@-webkit-keyframes examplelight {
-    0%   {opacity: 0;}
-    10%  {opacity: 1;}
-    20%  {opacity: 0;}
-    30%  {opacity: 1;}
-    40%  {opacity: 0;}
-    50%  {opacity: 1;}
-    60%  {opacity: 0;}
-    70%  {opacity: 1;}
-    80%  {opacity: 0;}
-    90%  {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@keyframes examplelight {
-    0%   {opacity: 0;}
-    10%  {opacity: 1;}
-    20%  {opacity: 0;}
-    30%  {opacity: 1;}
-    40%  {opacity: 0;}
-    50%  {opacity: 1;}
-    60%  {opacity: 0;}
-    70%  {opacity: 1;}
-    80%  {opacity: 0;}
-    90%  {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-
-#crack{
-    -webkit-animation-name: example; 
-    -webkit-animation-duration: 4s; 
-    animation-name: example;
-    animation-delay: 4s;
-    animation-duration: 4s;
-}
-
-@-webkit-keyframes example {
-    0%   {opacity: 0;}
-    /*25%  {opacity: .3;}
-    50%  {opacity: .6;}*/
-    100% {opacity: 1;}
-}
-
-@keyframes example {
-    0%   {opacity: 0;}
-    /*25%  {opacity: .3;}
-    50%  {opacity: .6;}*/
-    100% {opacity: 1;}
-}
 
 /* Remove margins from "page content" on small screens */
 
@@ -156,36 +138,38 @@ h6 {
     <!-- Page content -->
     <div class="w3-padding-large" id="main">
         <!--  <div class="w3-content" style="max-width:2000px;margin-top:0px"> -->
-        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-            <h1 class="w3-jumbo" style="font-family: 'East Sea Dokdo', cursive;"><span class="w3-hide-small">I'm</span> James - Mr. Push_Foward</h1>
-            <p>Web Developer Enthusiast</p>
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1 contentEditable role='textbox' aria-multiline='true' class="w3-jumbo" style="font-family: 'East Sea Dokdo', cursive;"><span class="w3-hide-small">I'm</span> James - Mr. Push_Foward</h1>
+            <p contentEditable role='textbox' aria-multiline='true' >Web Developer Enthusiast</p>
             <img id = "crack" src="images/push-forward3.jpg" alt="arrow" class="w3-image" width="900" height="1108">
         </header>
         <!-- <img id = "lightning" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbRciU0gy4RQwFuKwGQ_XpjwRhLxZXM5AdZVJR9ScADAkQG_Zf" width="75" height="75"> -->
         <!-- The Band Section -->
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="index">
-            <h2 class="w3-wide">About this guy</h2>
-            <p class="w3-opacity"><i>I like to Create</i></p>
-            <p class="w3-justify"> The MVP award goes to James Lemons!! Hard work pays off. I have learned that I am performance driven. High school, college, sports, jobs, and in my personal life I strive to be the best. Passion is what gives me the ability to achieve award winning objectives. Since everything is becoming tech-based, it only makes sense that I direct my passion to it. I am fascinated by how programming and coding gives you the ability to create anything you can imagine. Using html, javascript, react and so much more has ignited a new passion for me to master. Im excited to be apart of the tech world opposite of the customer. Instead customers will be interacting with a part of me </p>
-            <!-- <p class="w3-justify"> Im an middle aged guy who is trying to take hold of his future. I understand that technology is the future and the more you understand it the better off you will be. The fields I want to pursue are either cloud or cyber security. I feel I will do better in security because I take pride in security and safety in my own life. So why not take the opportunity to work in field with this mentality. The other reason why I would do well in this field because I feel it is competitive.</p>
-            <br>
-            <p> One of the consistent attributes about me is that I like to win. For as long as I can remember I have always figured out a way to be best. Whether its giving 110% effort, putting in extra hours of training and learning, finding more efficient ways to better the system, etc, I've always earned my way to be labeled a top performer.</p> -->
+        <div class=" w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="index">
+            <h2 contentEditable role='textbox' aria-multiline='true' class="w3-wide">About this guy</h2>
+            <p contentEditable role='textbox' aria-multiline='true' class="w3-opacity"><i>I like to Create</i></p>
+            <p contentEditable role='textbox' aria-multiline='true' class="w3-justify"> 
+                My story began by having the opportunity of working for a fortune 500 company that has thrived on making customers happy literally 24 hours a day, 7 days a week. That's right they do not close. Working with them for several years I have had successful career through learning and problem solving. Since being recruited out of college, excited and energetic to follow the company's path to greatness, I found along the way what I was truly passionate about. Being a solutionist,I figured out that innovation is the future to problem solving. Technology has proven to make life easier and that the "old way" is not always the best choice. Making the choice to move forward with my passion, I have combined my mangerial skills and experiences with the tools provided to me through a rigourous training program excitement. I am more then ever ready to take on my new path to succeed in the world of technology.
+            <!-- The MVP award goes to James Lemons!! Hard work pays off. I have learned that I am performance driven. High school, college, sports, jobs, and in my personal life I strive to be the best. Passion is what gives me the ability to achieve award winning objectives. Since everything is becoming tech-based, it only makes sense that I direct my passion to it. I am fascinated by how programming and coding gives you the ability to create anything you can imagine. Using html, javascript, react and so much more has ignited a new passion for me to master. Im excited to be apart of the tech world opposite of the customer. Instead customers will be interacting with a part of me -->
+             </p>
+            
             <div class="w3-row w3-padding-32">
                 <div class="w3-third">
-                    <p>Me</p>
+                    <p contentEditable role='textbox' aria-multiline='true'>Me</p>
                     <img src="images/self-pick-3.jpg" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
                 </div>
                 <div class="w3-third">
-                    <p>Me again</p>
+                    <p contentEditable role='textbox' aria-multiline='true'>Me again</p>
                     <img src="images/image1.png" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
                 </div>
                 <div class="w3-third">
-                    <p>Me again...?</p>
+                    <p contentEditable role='textbox' aria-multiline='true'>Me again...?</p>
                     <img src="images/self-pick-2.jpg" class="w3-round" alt="ME" style="width:60%">
                 </div>
             </div>
         </div>
-        <div class="w3-black" id="portfolio">
+        <div  id="portfolio">
+        <!-- <div class="w3-black" id="portfolio"> -->
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                 <h2 class="w3-wide w3-center">Portfolio</h2>
                 <p class="w3-opacity w3-center"><i>My Journey to Imaginative freedom</i></p>
