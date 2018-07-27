@@ -26,14 +26,16 @@ h6 {
 
 h1, p, h2{
     mix-blend-mode: difference;
+
 }
+    
 
 body{
-    background: linear-gradient(-90deg, gold, black);
-    background-size: 900% 900%;
-    -webkit-animation: Gradient 15s ease infinite;
+    background: linear-gradient(-90deg, gold, gold, black, black);
+    background-size: 1600% 300%;
+    -webkit-animation: Gradient 30s ease infinite;
     /*-moz-animation: Gradient 15s ease infinite;*/
-    animation: Gradient 15s ease infinite;
+    animation: Gradient 30s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -62,6 +64,8 @@ body{
     }
 }
 
+
+
 .w3-row-padding img {
     margin-bottom: 12px
 }
@@ -86,6 +90,93 @@ body{
     margin-right: -30px;
     
 }
+
+#crack{
+    
+    position: fixed;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease;
+    
+    animation-name: example;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   { left:3400px; }
+    29%  { left:150px; right:0px; }
+    47%  { left:150px; right:0px;}
+    100% {left:150px;  left:1900px;}   
+    }
+
+/* Standard syntax */
+@keyframes example {
+    0%   { left:3400px;}
+    29%  { left:150px; right:0px; }
+    47%  { left:150px; right:0px;}
+    100% {left:150px;  left:1900px;}   
+    
+}
+
+#crack2{
+
+position: absolute;
+    -webkit-animation-name: moon; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;
+    -webkit-filter: brightness(300%); /* Safari 6.0 - 9.0 */
+    
+    
+    animation-name: moon;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /*animation-delay: 15s;*/
+    
+}
+
+@-webkit-keyframes moon {
+    0%   { opacity: -0.2;  }
+    70%  { opacity: 0.4; }
+    80%  { opacity: 0.6; }
+    90%  { opacity: 0.8; }
+    100% { opacity: 1.0; }   
+    }
+
+/* Standard syntax */
+@keyframes moon {
+    0%   { opacity: -0.2; }
+    70%  { opacity: 0.4; }
+    80%  { opacity: 0.6; }
+    90%  { opacity: 0.8; }
+    100% { opacity: 1.0; }      
+    
+}
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes moon {
+    0%   { right:2000px; }
+    70%  { right:20px; }
+    80%  {  right: 20px; }
+    90%  {  right: 900px; }
+    100% {right:1000px;  right:6000px;}   
+    }
+
+ Standard syntax 
+@keyframes moon {
+    0%   { right:2000px; }
+    70%  { right:20px; }
+   80%  {  right: 20px; }
+    90%  {  right: 900px; }
+    100% {right:1000px;  right:6000px;}     
+    
+}*/
 
 
 
@@ -135,13 +226,17 @@ body{
         <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
     </div>
+    
     <!-- Page content -->
-    <div class="w3-padding-large" id="main">
+    <div class="w3-padding-large w3-center" id="main">
         <!--  <div class="w3-content" style="max-width:2000px;margin-top:0px"> -->
-        <header class="w3-container w3-padding-32 w3-center" id="home">
-            <h1 contentEditable role='textbox' aria-multiline='true' class="w3-jumbo" style="font-family: 'East Sea Dokdo', cursive;"><span class="w3-hide-small">I'm</span> James - Mr. Push_Foward</h1>
+        <header class="w3-container w3-padding-32" id="home">
+            <h1 contentEditable role='textbox' aria-multiline='true' class="w3-jumbo" style="font-family: 'East Sea Dokdo', cursive;"><span class="w3-hide-small ">I'm</span > James - Mr. Push_Foward</h1>
             <p contentEditable role='textbox' aria-multiline='true' >Web Developer Enthusiast</p>
-            <img id = "crack" src="images/push-forward3.jpg" alt="arrow" class="w3-image" width="900" height="1108">
+            <img id = "crack" src="images/sun1.gif" alt="active-sun"  width="200" height="200" >
+            <!-- <img id = "crack2" src="images/moon1.gif" alt="active-moon" width="500" height="500"> -->
+            <!-- <img id = "crack" src="https://thumbs.gfycat.com/ResponsibleGorgeousCow-size_restricted.gif" alt="arrow" class="w3-image" width="500" height="500"> -->
+
         </header>
         <!-- <img id = "lightning" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbRciU0gy4RQwFuKwGQ_XpjwRhLxZXM5AdZVJR9ScADAkQG_Zf" width="75" height="75"> -->
         <!-- The Band Section -->
@@ -402,7 +497,7 @@ body{
             <p class="w3-opacity w3-center"><i>Drop me a message</i></p>
             <div class="w3-row w3-padding-32">
                 <div class="w3-col m12 w3-large w3-center w3-margin-bottom">
-                    <i class="fa fa-map-marker" style="width:30px"></i> Georgia, US
+                    <i class="w3-center fa fa-map-marker" style="width:30px"></i> Georgia, US
                     <br>
                     <i class="fa fa-envelope" style="width:30px"> </i> Email: EdwardJJthe2@gmail.com
                     <br>
