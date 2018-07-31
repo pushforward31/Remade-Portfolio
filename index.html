@@ -110,8 +110,8 @@ body{
 
 #crack{
     
-    position: relative;
-    /*position: fixed;*/
+    /*position: relative;*/
+    position: fixed;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
@@ -189,11 +189,6 @@ position: absolute;
     
 }
 
-.img-responsive {
-    opacity:0.3;
-
-}
-
 /* Safari 4.0 - 8.0 */
 /*@-webkit-keyframes moon {
     0%   { right:2000px; }
@@ -223,10 +218,9 @@ position: absolute;
         margin-right: 0;
     }
     .img-responsive {
-        /*background-image: url("https://thumbs.gfycat.com/ResponsibleGorgeousCow-size_restricted.gif");*/
+        background-image: url("https://thumbs.gfycat.com/ResponsibleGorgeousCow-size_restricted.gif");
         width: 30%;
         height: 20%;
-        opacity:0.3;
 
     }
 }
@@ -276,7 +270,7 @@ position: absolute;
         <header class="w3-container w3-padding-32" id="home">
             <h1 contentEditable role='textbox' aria-multiline='true' class="w3-jumbo" style="font-family: 'East Sea Dokdo', cursive;"><span class="w3-hide-small ">I'm</span > James - Mr. Push_Foward</h1>
             <p contentEditable role='textbox' aria-multiline='true' >Web Developer Enthusiast</p>
-            <img id = "crack" class = "img-responsive" src="images/Sun1.gif" alt="active-sun" width= "70%" height="60%"  >
+            <img id = "crack" class = "img-responsive" src="images/Sun1.gif" alt="active-sun" width= "80%" height="70%"  >
             <!-- <img id = "crack2" src="images/moon1.gif" alt="active-moon" width="500" height="500"> -->
             <!-- <img id = "crack" src="https://thumbs.gfycat.com/ResponsibleGorgeousCow-size_restricted.gif" alt="arrow" class="w3-image" width="500" height="500"> -->
 
@@ -292,24 +286,21 @@ position: absolute;
              </p>
             
             <div class="w3-row w3-padding-32">
-                <div class="w3-third">
+                <div class="w3-third w3-content w3-container">
                     <p contentEditable role='textbox' aria-multiline='true'>Me</p>
                     <img src="images/self-pick-3.jpg" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
-                    
                 </div>
                 <div class="w3-third">
                     <p contentEditable role='textbox' aria-multiline='true'>Me again</p>
                     <img src="images/image1.png" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
-                    
                 </div>
                 <div class="w3-third">
-                    <p contentEditable role='textbox' aria-multiline='true'>Me again...? </p>
+                    <p contentEditable role='textbox' aria-multiline='true'>Me again...?</p>
                     <img src="images/self-pick-2.jpg" class="w3-round" alt="ME" style="width:60%">
-                   
                 </div>
             </div>
         </div>
-        <div id="portfolio">
+        <div class = "w3-content" id="portfolio">
         <!-- <div class="w3-black" id="portfolio"> -->
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                 <h2 class="w3-wide w3-center">Portfolio</h2>
@@ -329,9 +320,9 @@ position: absolute;
                             <li data-target="#myCarousel" data-slide-to="5"></li>
                             <li data-target="#myCarousel" data-slide-to="6"></li>
                             <li data-target="#myCarousel" data-slide-to="7"></li>
-                            <!-- <li data-target="#myCarousel" data-slide-to="8"></li> -->
-                            <!-- <li data-target="#myCarousel" data-slide-to="9"></li> -->
-                            <!-- <li data-target="#myCarousel" data-slide-to="10"></li> -->
+                            <li data-target="#myCarousel" data-slide-to="8"></li>
+                            <li data-target="#myCarousel" data-slide-to="9"></li>
+                            <li data-target="#myCarousel" data-slide-to="10"></li>
                         </ol>
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
@@ -426,17 +417,17 @@ position: absolute;
                             </div>
                             </a>
                             </div>
-                            <!-- <div class="item">
+                            <div class="item">
 <a href="https://pushforward31.github.io/week-4-homework/">
                         <img src="images/picture1.png" alt="crystal game" style="width:100%" class="w3-hover-opacity">
                         
                             <div class="w3-container">
                                 <h3><b>Crystal game</b></h3>
                                 <p style="font-size: 20px">A strategy game that allows a player to make choices with a slew of crystals. Each crystal picture has a certain number. You must choose a crystal picture to reach the collective goal of the main number shown in bold.</p>
-                            </div> -->
-                            <!-- </div>
-                            </a> -->
-                        <!-- </div> -->
+                            </div>
+                            </div>
+                            </a>
+                        </div>
                         <!-- Left and right controls -->
                         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
@@ -567,10 +558,10 @@ position: absolute;
         <!-- End Page Content -->
         <!-- </div> -->
         <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-black w3-xlarge">
-            <p class="w3-opacity w3-center" style="font-size: 26px"><i>More info about me</i></p>
-            <i class="fa fa-github-square w3-hover-opacity icon" style="font-size: 20px"><a href="https://github.com/pushforward31"></a></i>
-            <i class="fa fa-stack-overflow w3-hover-opacity icon" style="font-size: 20px"><a href="https://stackoverflow.com/users/8960892/underdog-33"></a></i>
-            <i class="fa fa-linkedin w3-hover-opacity icon" style="font-size: 20px"><a href="https://www.linkedin.com/in/james-lemons-pushforward"></a></i>
+            <p class="w3-opacity w3-center"><i>More info about me</i></p>
+            <i class="fa fa-github-square w3-hover-opacity icon" style="font-size: 20px><a href="https://github.com/pushforward31"></a></i>
+            <i class="fa fa-stack-overflow w3-hover-opacity icon" style="font-size: 20px><a href="https://stackoverflow.com/users/8960892/underdog-33"></a></i>
+            <i class="fa fa-linkedin w3-hover-opacity icon" style="font-size: 20px><a href="https://www.linkedin.com/in/james-lemons-pushforward"></a></i>
             <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
         </footer>
     </div>
