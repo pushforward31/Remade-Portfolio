@@ -32,24 +32,25 @@ i {
     mix-blend-mode: difference;
 
 }*/
-    
 
-body{
-    background: linear-gradient(-90deg, gold, gold, black, black);
+
+body {
+    /* background: linear-gradient(-90deg, gold, gold, black, black);
     background-size: 1600% 300%;
     -webkit-animation: Gradient 30s ease infinite;
     -moz-animation: Gradient 30s ease infinite;
-    animation: Gradient 30s ease infinite;
+    animation: Gradient 30s ease infinite;*/
 }
 
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0% 50%
     }
-    
+
     50% {
         background-position: 100% 50%
     }
+
     100% {
         background-position: 0% 50%
     }
@@ -59,10 +60,11 @@ body{
     0% {
         background-position: 0% 50%
     }
-    
+
     50% {
         background-position: 100% 50%
     }
+
     100% {
         background-position: 0% 50%
     }
@@ -72,10 +74,11 @@ body{
     0% {
         background-position: 0% 50%
     }
-    
+
     50% {
         background-position: 100% 50%
     }
+
     100% {
         background-position: 0% 50%
     }
@@ -105,20 +108,20 @@ body{
 #main {
     margin-left: 90px;
     margin-right: -30px;
-    
+
 }
 
-#crack{
+/*#crack{
     
     position: fixed;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 30s; 
+    -webkit-animation-iteration-count: infinite; 
     -webkit-animation-timing-function: ease;
     
-    -moz-animation-name: example; /* Safari 4.0 - 8.0 */
-    -moz-animation-duration: 30s; /* Safari 4.0 - 8.0 */
-    -moz-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -moz-animation-name: example; 
+    -moz-animation-duration: 30s; 
+        -moz-animation-iteration-count: infinite; 
     -moz-animation-timing-function: ease;
 
     animation-name: example;
@@ -128,7 +131,7 @@ body{
     
 }
 
-/* Safari 4.0 - 8.0 */
+
 @-webkit-keyframes example {
     0%   { left:3400px; }
     29%  { left:150px; right:0px; }
@@ -143,7 +146,7 @@ body{
     100% {left:150px;  left:1900px;}   
     }
 
-/* Standard syntax */
+
 @keyframes example {
     0%   { left:3400px;}
     29%  { left:150px; right:0px; }
@@ -151,41 +154,73 @@ body{
     100% {left:150px;  left:1900px;}   
     
 }
+*/
+#crack2 {
 
-#crack2{
-
-position: absolute;
-    -webkit-animation-name: moon; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    position: absolute;
+    -webkit-animation-name: moon;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 30s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
     -webkit-animation-timing-function: linear;
-    -webkit-filter: brightness(300%); /* Safari 6.0 - 9.0 */
-    
-    
+    -webkit-filter: brightness(300%);
+    /* Safari 6.0 - 9.0 */
+
+
     animation-name: moon;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     /*animation-delay: 15s;*/
-    
+
 }
 
 @-webkit-keyframes moon {
-    0%   { opacity: -0.2;  }
-    70%  { opacity: 0.4; }
-    80%  { opacity: 0.6; }
-    90%  { opacity: 0.8; }
-    100% { opacity: 1.0; }   
+    0% {
+        opacity: -0.2;
     }
+
+    70% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
 
 /* Standard syntax */
 @keyframes moon {
-    0%   { opacity: -0.2; }
-    70%  { opacity: 0.4; }
-    80%  { opacity: 0.6; }
-    90%  { opacity: 0.8; }
-    100% { opacity: 1.0; }      
-    
+    0% {
+        opacity: -0.2;
+    }
+
+    70% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+
 }
 
 .img-responsive {
@@ -220,6 +255,7 @@ position: absolute;
         margin-left: 0;
         margin-right: 0;
     }
+
     .img-responsive {
         /*background-image: url("https://thumbs.gfycat.com/ResponsibleGorgeousCow-size_restricted.gif");*/
         width: 60%;
@@ -267,52 +303,64 @@ position: absolute;
         <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
     </div>
-    
     <!-- Page content -->
-    <div class="w3-padding-large w3-center" id="main">
+    <div class="w3-padding-large w3-black" id="main">
         <!--  <div class="w3-content" style="max-width:2000px;margin-top:0px"> -->
-        <header class="w3-container w3-padding-32" id="home">
-            <h1 contentEditable role='textbox' aria-multiline='true' class="w3-jumbo" style="font-family: 'East Sea Dokdo', cursive;"><span class="w3-hide-small ">I'm</span > James - Mr. Push_Foward</h1>
-            <p contentEditable role='textbox' aria-multiline='true' >Web Developer Enthusiast</p>
-            <img id = "crack" class = "img-responsive" src="images/Sun1.gif" alt="active-sun" width="80%" height="70%"  >
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1 contentEditable role='textbox' aria-multiline='true' class="w3-jumbo" style="font-family: 'East Sea Dokdo', cursive;"><span class="w3-hide-small ">I'm</span > JJ - Mr. Push_Foward</h1>
+            <p class="w3-center" contentEditable role='textbox' aria-multiline='true'>Web Developer Enthusiast</p>
+            <!-- <img id = "crack" class = "img-responsive" src="images/Sun1.gif" alt="active-sun" width="80%" height="70%"  > -->
             <!-- <img id = "crack2" src="images/moon1.gif" alt="active-moon" width="500" height="500"> -->
             <!-- <img id = "crack" src="https://thumbs.gfycat.com/ResponsibleGorgeousCow-size_restricted.gif" alt="arrow" class="w3-image" width="500" height="500"> -->
-
         </header>
         <!-- <img id = "lightning" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbRciU0gy4RQwFuKwGQ_XpjwRhLxZXM5AdZVJR9ScADAkQG_Zf" width="75" height="75"> -->
         <!-- The Band Section -->
-        <div class=" w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="index">
-            <h2 contentEditable role='textbox' aria-multiline='true' class="w3-wide">About this guy</h2>
-            <p contentEditable role='textbox' aria-multiline='true' class="w3-opacity"><i>I like to Create</i></p>
-            <p contentEditable role='textbox' aria-multiline='true' class="w3-justify" style="color: #3273af"> 
-                <!-- My story began by having the opportunity of working for a fortune 500 company that has thrived on making customers happy literally 24 hours a day, 7 days a week. That's right they do not close. Working with them for several years  -->
+        <div class=" w3-container w3-content w3-padding-32" style="max-width:1000px" id="index">
+            <h2 contentEditable role='textbox' aria-multiline='true' class="w3-wide w3-center">About this guy</h2>
+            <p contentEditable role='textbox' aria-multiline='true' class="w3-opacity w3-center"><i>I like to Create</i></p>
+            <!-- <p contentEditable role='textbox' aria-multiline='true' class="w3-justify" style="color: #3273af"> 
+               
                 I have had successful career through learning and problem solving. Since being recruited out of college, excited and energetic to follow the company's path to greatness, I found along the way what I was truly passionate about. Being a solutionist,I figured out that innovation is the future to problem solving. Technology has proven to make life easier and that the "old way" is not always the best choice. Making the choice to move forward with my passion, I have combined my mangerial skills and experiences with the tools provided to me through a rigourous training program excitement. I am more then ever ready to take on my new path to succeed in the world of technology.
             
-             </p>
-            
-            <!-- <div class="w3-row w3-padding-32">
+             </p> -->
+            <div class="w3-row w3-padding-32">
                 <div class="w3-third">
-                    <p contentEditable role='textbox' aria-multiline='true'>Me</p>
-                    <img src="images/self-pick-3.jpg" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
+                    <p class="w3-center" contentEditable role='textbox' aria-multiline='false'style=" font-size:25px">Soft Skills</p>
+                    <ul class="w3-round w3-margin-bottom" alt="ME" style="width:100%, font-size:20px">
+                        <li>Proven Leadership ability</li>
+                        <li>Work well with a team </li>
+                        <li>Proficient in implementing newly learned skills </li>
+                        <li>Constently seeking different programming methods for best practices</li>
+                        <li>Driven to learn new technologies and tools to enhance ability </li>
+                    </ul>
                 </div>
                 <div class="w3-third">
-                    <p contentEditable role='textbox' aria-multiline='true'>Me again</p>
-                    <img src="images/image1.png" class="w3-round w3-margin-bottom" alt="ME" style="width:60%">
+                    <p class="w3-center" contentEditable role='textbox' aria-multiline='true' style="font-size:25px">Hard Skills</p>
+                    <ul class="w3-round w3-margin-bottom" alt="ME" style="width:100%, font-size:20px">
+                        <li> Built functional applications with Javascript/Jquery deploying them through Github and Heroku </li>
+                        <li> Configured servers and intergrated databases with Express and Node </li>
+                        <li>Experience with modern frontend frameworks of React/Angular6</li>
+                    </ul>
                 </div>
                 <div class="w3-third">
-                    <p contentEditable role='textbox' aria-multiline='true'>Me again...?</p>
-                    <img src="images/self-pick-2.jpg" class="w3-round" alt="ME" style="width:60%">
+                    <p class="w3-center" contentEditable role='textbox' aria-multiline='true' style="font-size:25px">Advantages</p>
+                    <ul class="w3-round" alt="ME" style="width:100%, font-size:20px">
+                        <li>Trained programmers to understand the Javascript language </li>
+                        <li>Years of managerial experience over multiple store operations</li>
+                        <li>Gained a mature determination to work until the job is done </li>
+                        <li> Consistent track record of success in achieving company and personal targets </li>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
-        <div class = "w3-content" id="portfolio">
-        <!-- <div class="w3-black" id="portfolio"> -->
+        <div class="w3-content w3-center" id="portfolio">
+            <!-- <div class="w3-black" id="portfolio"> -->
             <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
                 <h2 class="w3-wide w3-center">Portfolio</h2>
                 <p class="w3-opacity w3-center"><i>My Journey to Imaginative freedom</i></p>
                 <br>
                 <div class=" w3-padding-32" style="margin:0 -16px">
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators" style="top: 0px">
                             <li data-target="#myCarousel" data-slide-to="0" class="active">
@@ -325,8 +373,8 @@ position: absolute;
                             <li data-target="#myCarousel" data-slide-to="5"></li>
                             <li data-target="#myCarousel" data-slide-to="6"></li>
                             <li data-target="#myCarousel" data-slide-to="7"></li>
-                           <!--  <li data-target="#myCarousel" data-slide-to="8"></li>
-                            <li data-target="#myCarousel" data-slide-to="9"></li>
+                            <li data-target="#myCarousel" data-slide-to="8"></li>
+                            <!-- <li data-target="#myCarousel" data-slide-to="9"></li>
                             <li data-target="#myCarousel" data-slide-to="10"></li> -->
                         </ol>
                         <!-- Wrapper for slides -->
@@ -335,12 +383,23 @@ position: absolute;
                                 <a href="https://weblinaut.github.io/CabbageHead/">
                                     <img src="images/picture9.png" alt="Trivia" style="width:100%" class="w3-hover-opacity">
                                 <!-- </a> -->
-                             <div class="w3-container">   
-                             <!-- <div class="w3-container w3-black"> -->
-                                <h3><b>Flaming Cabbage</b></h3>
-                                <p style="font-size: 20px">A travel application that shows nearby restaurants with “good” reviews. It also shows the weather forecast for the next 5 days.</p>
+                                <div class="w3-container">
+                                    <!-- <div class="w3-container w3-black"> -->
+                                    <h3><b>Flaming Cabbage</b></h3>
+                                    <p style="font-size: 20px">A travel application that shows nearby restaurants with “good” reviews. It also shows the weather forecast for the next 5 days.</p>
+                                </div>
+                                </a>
                             </div>
-                             </a>
+                            <div class="item">
+                                <a href="https://pushforward31.github.io/avoxi-challenge/">
+                        <img src="images/picture14.png" alt="movie" style="width:100%" class="w3-hover-opacity">
+                        
+                            <div class="w3-container">
+                                <h3><b>Movie Finder Challenge</b></h3>
+                                <p style="font-size: 20px">This application uses Omdb to search movies and tv series in bulk. Finds up to 10 results for any name entered into the search box.</p>
+                            </div>
+                            
+                            </a>
                             </div>
                             <div class="item">
                                 <a href="https://pushforward-hero.herokuapp.com/">
@@ -353,36 +412,36 @@ position: absolute;
                             </a>
                             </div>
                             <div class="item">
-<a href="https://pushforward31-news.herokuapp.com/">
+                                <a href="https://pushforward31-news.herokuapp.com/">
                         <img src="images/picture11.png" alt="News-app" style="width:100%" class="w3-hover-opacity">
                        
                             <div class="w3-container">
                                 <h3><b>Get the News</b></h3>
                                 <p style="font-size: 20px">An application that pulls news feeds from a particular website. I was sole developer for this application.</p>
                             </div>   
-                             </a>                        
-                             </div>
+                             </a>
+                            </div>
                             <div class="item">
-<a href="https://college-bound.herokuapp.com/">
+                                <a href="https://college-bound.herokuapp.com/">
                         <img src="images/picture8.png" alt="Train-Schedule" style="width:100%" class="w3-hover-opacity">
                         
                             <div class="w3-container">
                                 <h3><b>College Bound</b></h3>
                                 <p style="font-size: 20px">An education app that helps individuals decide what college or university they should attend. Finds schools by state, SAT and ACT scores. </p>
                             </div>   
-                            </a>                         
-                        </div>
+                            </a>
+                            </div>
                             <div class="item">
-<a href="https://pushforward31.herokuapp.com/">
+                                <a href="https://pushforward31.herokuapp.com/">
                         <img src="images/picture7.png" alt="crystal game" style="width:100%" class="w3-hover-opacity">
                         
                             <div class="w3-container">
                                 <h3><b>Taste a Burger</b></h3>
                                 <p style="font-size: 20px">This is a game app that lets users input the names of burgers they'd like to eat. </p>
                             </div> 
-                            </a>                           
-                        </div>
-                        <div class="item">
+                            </a>
+                            </div>
+                            <div class="item">
                                 <a href="https://pushforward31.github.io/Salesforce-mapProject/">
                         <img src="images/picture13.png" alt="Giftastic" style="width:100%" class="w3-hover-opacity">
                         
@@ -393,17 +452,17 @@ position: absolute;
                             </a>
                             </div>
                             <div class="item">
-<a href="https://pushforward31.github.io/Giftastic/">
+                                <a href="https://pushforward31.github.io/Giftastic/">
                         <img src="images/picture3.png" alt="Giftastic" style="width:100%" class="w3-hover-opacity">
                         
                             <div class="w3-container">
                                 <h3><b>Giftastic</b></h3>
                                 <p style="font-size: 20px">This application is designed to generate short video clips of buttons tabbed. Use the search box to create new topic buttons.</p>
                             </div>  
-                            </a>                          
-                        </div>
+                            </a>
+                            </div>
                             <div class="item">
-<a href="https://pushforward31.github.io/TriviaGame/">
+                                <a href="https://pushforward31.github.io/TriviaGame/">
                         <img src="images/picture4.png" alt="Trivia" style="width:100%" class="w3-hover-opacity">
                         
                             <div class="w3-container">
@@ -413,7 +472,7 @@ position: absolute;
                             </a>
                             </div>
                             <div class="item">
-<a href="https://pushforward31.github.io/Train-Schedule/">
+                                <a href="https://pushforward31.github.io/Train-Schedule/">
                         <img src="images/picture5.png" alt="Train-Schedule" style="width:100%" class="w3-hover-opacity">
                         
                             <div class="w3-container">
@@ -422,28 +481,25 @@ position: absolute;
                             </div>
                             </a>
                             </div>
-                            <!-- <div class="item">
-<a href="https://pushforward31.github.io/week-4-homework/">
-                        <img src="images/picture1.png" alt="crystal game" style="width:100%" class="w3-hover-opacity">
-                        
-                            <div class="w3-container">
-                                <h3><b>Crystal game</b></h3>
-                                <p style="font-size: 20px">A strategy game that allows a player to make choices with a slew of crystals. Each crystal picture has a certain number. You must choose a crystal picture to reach the collective goal of the main number shown in bold.</p>
-                            </div>
-                            </div>
-                            </a>
-                        </div> -->
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <!-- <div>   
+                    <h4><b>Movie Finder Challenge</b></h4>
+                    <h5 className = "description">This application uses Omdb to search movies and tv series in bulk. Finds up to 10 results for any name entered into the search box.</h5>
+                    <img className = "portPics" src="images/picture14.png" onClick= "https://pushforward31.github.io/avoxi-challenge/" />
+                    <a href="https://pushforward31.github.io/avoxi-challenge/">
+                    <p className="legend">Website </p>
+                    </a>
+                </div> -->
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
-                    </div>
-                 <!--    <div class="w3-third w3-margin-bottom">
+                        </div>
+                        <!--    <div class="w3-third w3-margin-bottom">
                             <a href="https://weblinaut.github.io/CabbageHead/">
                         <img src="images/picture9.png" alt="Trivia" style="width:100%" class="w3-hover-opacity">
                         </a>
@@ -542,34 +598,34 @@ position: absolute;
                                 <p style="font-size: 10px">An application that allows markers to placed on a map at specific coordinates. Purpose is help clients keep an account of business opportunities in any location. </p>
                             </div>
                         </div>-->
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-32" style="max-width:800px" id="contact">
-            <h2 class="w3-wide w3-center">CONTACT</h2>
-            <p class="w3-opacity w3-center"><i>Drop me a message</i></p>
-            <div class="w3-row w3-padding-32">
-                <div class="w3-col m12 w3-large w3-center w3-margin-bottom">
-                    <i class="w3-center fa fa-map-marker" style="width:30px"></i> Georgia, US
-                    <br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email: EdwardJJthe2@gmail.com
-                    <br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone: Will release after received email
-                    <br>
+            <!-- The Contact Section -->
+            <div class="w3-container w3-content w3-padding-32" style="max-width:800px" id="contact">
+                <h2 class="w3-wide w3-center">CONTACT</h2>
+                <p class="w3-opacity w3-center"><i>Drop me a message</i></p>
+                <div class="w3-row w3-padding-32">
+                    <div class="w3-col m12 w3-large w3-center w3-margin-bottom">
+                        <i class="w3-center fa fa-map-marker" style="width:30px"></i> Georgia, US
+                        <br>
+                        <i class="fa fa-envelope" style="width:30px"> </i> Email: EdwardJJthe2@gmail.com
+                        <br>
+                        <i class="fa fa-phone" style="width:30px"></i> Phone: Will release after received email
+                        <br>
+                    </div>
                 </div>
             </div>
+            <!-- End Page Content -->
+            <!-- </div> -->
+            <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-black w3-xlarge">
+                <p class="w3-opacity w3-center"><i>More info about me</i></p>
+                <i class="fa fa-github-square w3-hover-opacity icon"><a href="https://github.com/pushforward31"></a></i>
+                <i class="fa fa-stack-overflow w3-hover-opacity icon"><a href="https://stackoverflow.com/users/8960892/underdog-33"></a></i>
+                <i class="fa fa-linkedin w3-hover-opacity icon"><a href="https://www.linkedin.com/in/james-lemons-pushforward"></a></i>
+                <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+            </footer>
         </div>
-        <!-- End Page Content -->
-        <!-- </div> -->
-        <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-black w3-xlarge">
-            <p class="w3-opacity w3-center"><i>More info about me</i></p>
-            <i class="fa fa-github-square w3-hover-opacity icon"><a href="https://github.com/pushforward31"></a></i>
-            <i class="fa fa-stack-overflow w3-hover-opacity icon"><a href="https://stackoverflow.com/users/8960892/underdog-33"></a></i>
-            <i class="fa fa-linkedin w3-hover-opacity icon"><a href="https://www.linkedin.com/in/james-lemons-pushforward"></a></i>
-            <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-        </footer>
-    </div>
 </body>
 
 </html>
